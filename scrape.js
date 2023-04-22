@@ -7,8 +7,7 @@ const accSid = process.env.TWILIO_ACC_SID;
 const accAuth = process.env.TWILI0_ACC_AUTH;
 const client = require("twilio")(accSid, accAuth);
 
-const url =
-  "https://slot.ng/apple-macbook-pro-14-m1-pro-chip-16gb-unified-memory-512gb-ssd-14-2-space-grey-1.html";
+const url = process.env.TWILI0_ACC_LINK;
 
 const product = { name: "", price: "", link: "" };
 
